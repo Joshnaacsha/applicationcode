@@ -56,7 +56,7 @@ pipeline {
 
                 git add deployment.yaml
                 git commit -m "Update image to 15.206.179.53:5000/${IMAGE_NAME}:${IMAGE_TAG}"
-                git push https://$TOKEN@github.com/SUBASHREE-KB/manifests.git update-image-$BUILD_NUMBER
+                git push https://$TOKEN@https://github.com/Joshnaacsha/manifests.git update-image-$BUILD_NUMBER
                 """
             }
         }
